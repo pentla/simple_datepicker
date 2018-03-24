@@ -1,0 +1,67 @@
+/* 共通スタイル */
+
+/* caution: スタイルの変更によりカレンダーの高さが変わる場合は、calendar.jsのcalendar.init()の中のthis.m.calendar_heightを、変更後の大きさに合わせて変更すること。
+現在: height:225.98、width:251.25
+*/
+
+.cal
+{
+    font-family : Arial, sans-serif;
+    position : fixed;
+    width : 210px;
+    text-align : center;
+    background : white;
+    padding : 10px 8px;
+    box-shadow : 0 0 2px rgba(0,0,0,0.1);
+}
+.cal th, td
+{
+    height : 28px;
+    line-height : 28px;
+    padding : 0;
+    font-size : 14px;
+    cursor : pointer;
+    user-select : none;
+}
+
+/* 日付以外の要素のスタイル */
+.cal th
+{
+    font-family : Verdana, sans-serif;
+    font-weight : normal;
+}
+.cal th select {
+    outline : none;
+    font-size: 14px;
+}
+
+/* 日付の要素のスタイル */
+.cal td { width : 28px; }
+
+/* hoverを追加 */
+.cal td:hover, th:hover:not(.week):not(.selectbox)
+{
+    background : #e6e6fa;
+    border-radius : 4px;
+}
+
+/* 日付の種類ごとのクラス */
+.cal .other { color : gray; }
+.cal .sun { color : red; }
+.cal .sat { color : blue; }
+.cal .today
+{
+    background : lightyellow;
+    border-radius : 4px;
+}
+.cal .selected
+{
+    background : #e6e6fa;
+    border-radius : 4px;
+}
+.cal .selected:hover
+{
+  /* 通常時のhoverの上書き */
+  background : #e6e6fa;
+}
+.cal .noselect { background: whitesmoke; }
