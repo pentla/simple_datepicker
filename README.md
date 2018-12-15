@@ -43,34 +43,29 @@ $('#input-form').calendar();
 
 #### 一覧
 
-##### lang
+##### lang: string
 年・月・日の表示言語。  
-- 型: string  
-- デフォルト: 'ja'
+- デフォルト: ja
 
 - 候補
-  - 'ja': 日本語表示
-  - 'en': 英語表示
+  - ja: 日本語表示
+  - en: 英語表示
 
-##### separator
+##### separator: string
 inputに表示する際の区切り文字。(1文字)  
-- 型: string
-- デフォルト: '/'
+- デフォルト: /
 
-##### display_date
+##### display_date: DateObj
 
-表示させたい月。
-- 型: Dateオブジェクト
+DatePickerを初期表示させたい月。
 - デフォルト: 現在時刻
 
-##### from
+##### from: DateObj
 
 この日付より前の日付は選択不可。
-- 型: Dateオブジェクト
 - デフォルト: なし
 
-##### to
+##### to: DateObj
 
 この日付より後の日付は選択不可。
-- 型: Dateオブジェクト
 - デフォルト: なし
