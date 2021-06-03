@@ -32,11 +32,10 @@ $('#input-form').calendar();
   var input = document.getElementById('input');
   input.calendar({
     lang: 'ja'
-    // 'ja'か'en'のみ。default: ja
-    separator: '/',			  //	各項目の区切り文字(1文字)
-    display_date: date()	//	表示させたい月(Dateオブジェクト)
-    from: date(),					//	それ以下の日は選択不可(Dateオブジェクト)
-    to: date(),						//	それ以降の日は選択不可(Dateオブジェクト)
+    separator: '/',
+    display_date: new Date()
+    from: new Date(),
+    to: new Date(),
   })
 </script>
 ```
@@ -55,17 +54,17 @@ $('#input-form').calendar();
 inputに表示する際の区切り文字。(1文字)  
 - デフォルト: /
 
-##### display_date: DateObj
+##### display_date: Date Object
 
 DatePickerを初期表示させたい月。
 - デフォルト: 現在時刻
 
-##### from: DateObj
+##### from: Date Object
 
 この日付より前の日付は選択不可。
 - デフォルト: なし
 
-##### to: DateObj
+##### to: Date Object
 
 この日付より後の日付は選択不可。
 - デフォルト: なし
