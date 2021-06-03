@@ -1,7 +1,7 @@
 # simple_datepicker
 Datepicker dependent for javascript library (ex. jquery, bootstrap)
 
-https://watkazuki.github.io/simple_datepicker/
+https://pentla.github.io/simple_datepicker/
 
 ### 概要
 
